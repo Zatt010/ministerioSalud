@@ -1,0 +1,17 @@
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/">Inicio</a></li>
+      <li class="dropdown" (mouseover)="showMenu = true">
+        <a>Servicios</a>
+        <div *ngIf="showMenu" (mouseleave)="showMenu = false">
+          <a href="#">Servicio 1</a>
+          <a href="#">Servicio 2</a>
+          <a href="#">Servicio 3</a>
+          <a href="#">Servicio 4</a>
+        </div>
+      </li>
+      <li><a routerLink="/contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
